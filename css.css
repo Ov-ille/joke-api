@@ -80,13 +80,18 @@ h1 {
     z-index: 99;
     top: 0;
     left: 0;
-    width: 40vw;
+    width: 20vw;
     border-radius: 50%;
+    transition: all 1s linear;
     display: none
 }
 
 @media (max-width: 1000px) {
     #main-panel {
         width: 80%;
+    }
+
+    #laugh {
+        width: 40vw;
     }
 }
