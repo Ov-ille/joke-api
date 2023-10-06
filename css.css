@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Onest', sans-serif;
+}
+
+body {
+    margin: 0
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-panel {
+    background-color: rgb(163, 191, 207);
+    min-height: 50%;
+    max-height: fit-content;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px rgb(47, 85, 107);
+}
+
+h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(47, 85, 107);
+}
+
+.button-active {
+    width: 100px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: rgb(47, 85, 107);
+    border: none;
+    border-radius: 2px;
+    color: rgb(199, 199, 199);
+    padding: 5px;
+}
+
+.button-active:hover {
+    color: rgb(130, 179, 207);
+    box-shadow: 0px 0px 5px rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+.button-disabled {
+    width: 100px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 2px;
+    color: rgb(199, 199, 199);
+    padding: 5px;
+    background-color: rgb(101, 119, 131);
+}
+
+
+
+#joke {
+    font-size: 2rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: rgb(243, 243, 243);
+}
+
+#laugh {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 300px;
+    border-radius: 50%;
+    display: none
+}
